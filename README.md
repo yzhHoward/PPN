@@ -12,6 +12,6 @@ For training and evaluation pleases reference to main.py
   volume={},
   number={},
   pages={1506-1510},
-  keywords={Measurement;Deep learning;Analytical models;Codes;Prototypes;Medical services;Signal processing;Electronic health record;healthcare analysis;prototype learning;interpretability},
-  doi={10.1109/ICASSP48485.2024.10447313}}
+  doi={10.1109/ICASSP48485.2024.10447313}
+}
 ```
