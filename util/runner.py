@@ -132,7 +132,7 @@ class Runner():
                     loss_p += opt[i] * log(opt[j]) + (1. - opt[i]) * log(1. - opt[j])
             loss_p /= (self.model.num_prototypes) * (self.model.num_prototypes - 1) / 2
             loss_d = torch.clamp(70 / math.sqrt(self.model.num_prototypes) - torch.pdist(self.model.prototype_vectors.reshape(self.model.num_prototypes, -1)), 0).mean()
-            loss = loss + self.prototype_loss_ratio * loss_p + self.prototype_loss_ratio * loss_d * 0.
+            loss = loss + self.prototype_loss_ratio * loss_p + self.prototype_loss_ratio * loss_d
             self.model.Attention1.requires_grad_(True)
             self.model.output.requires_grad_(True)
             self.optimizer.zero_grad()
