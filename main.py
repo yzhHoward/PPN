@@ -14,7 +14,7 @@ from data.ckd import load_ckd_mortality_few_visit, load_ckd_mortality_sparse, lo
 from data.challenge import load_challenge_zerofill, load_challenge_new, load_challenge_new_few_visit, load_challenge_new_sparse
 from data.challenge2012 import load_challenge_2012_file
 from data.mimic_iii import mimic_init, load_mimic_mortality, load_mimic_mortality_file, load_mimic_mortality_few_visit, load_mimic_mortality_sparse
-from model.promanet import Promanet
+from model.ppn import PPN
 
 device = torch.device("cuda:0" if torch.cuda.is_available() == True else 'cpu')
 
